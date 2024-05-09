@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Todo Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Todo Application is a web-based application built with Spring Boot for the backend and React for the frontend. It allows users to manage their todo items by creating, reading, updating, and deleting them. The application follows a modern software architecture with a clear separation of concerns between the backend and frontend components.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Create Todo Items**: Users can create new todo items by providing a title and description.
+- **View Todo Items**: Users can view a list of all their todo items, including their titles, descriptions, and completion status.
+- **Update Todo Items**: Users can update the title, description, and completion status of existing todo items.
+- **Delete Todo Items**: Users can delete todo items they no longer need.
 
-### `npm start`
+## Demo Video
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the demo video to see the Todo application in action:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Todo Application Demo](https://youtu.be/_DVgtr5TOWY)
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
 
-### `npm run build`
+- **Spring Boot**: The backend is built using the Spring Boot framework, which provides a robust and scalable foundation for building RESTful APIs.
+- **Spring Data JPA**: The application utilizes Spring Data JPA for interacting with the database and managing the persistence layer.
+- **MYSQL Database**: An MYSQL database is used for development and testing purposes.
+- **Maven**: The project is built and managed using Apache Maven.
+- **JWT**: Used JWT to authenticate user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**: The frontend is built using React, a popular JavaScript library for building user interfaces.
+- **React Router**: React Router is used for client-side routing and navigation within the application.
+- **Axios**: Axios is used for making HTTP requests from the frontend to the backend API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To run the Todo Application locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Make sure you have the following installed on your system:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Java Development Kit (JDK) 8 or higher
+- Node.js and npm (Node Package Manager)
+- Git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend Setup
 
-## Learn More
+1. Clone the repository:
+2. Navigate to the `backend` directory:
+3. **Set up the MySQL database**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application uses a MySQL database. Before running the application, you need to create a MySQL database and configure the connection details in the `application.properties` file located in `src/main/resources`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open the `application.properties` file and update the following properties with your MySQL credentials:
+Replace `your_mysql_username` and `your_mysql_password` with your actual MySQL username and password. You can also modify the `todo_schema` database name if needed.
+4. #Note
 
-### Code Splitting
+1. Used Github access token to create gist. It may expires which cause error to generates gist file , if it happens please replace with the new github access token. 
+2. Gist file will also save in the directory exporedProjects locally.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Build the project using Maven:
+6. Run the Spring Boot application:
+The backend server will start running on `http://localhost:8080`.
 
-### Analyzing the Bundle Size
+### Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Navigate to the `frontend` directory:
+2. Install the required dependencies:
+3. Start the React development server:
+The frontend application will be accessible at `http://localhost:3000`.
 
-### Making a Progressive Web App
+## Backend Commands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `mvn clean install`: Builds the Spring Boot backend project and generates the JAR file.
+- `mvn spring-boot:run`: Runs the Spring Boot application.
+- `mvnw test`: Runs the backend unit tests and integration tests.
 
-### Advanced Configuration
+## Frontend Commands
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `npm install`: Installs the required dependencies for the React frontend.
+- `npm start`: Starts the React development server and launches the application in the browser.
 
-### Deployment
+#Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Used Github access token to create gist. It may expires which cause error to generates gist file. 
+2. Gist file will also save in the directory exporedProjects locally.
 
-### `npm run build` fails to minify
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+To run the backend tests, navigate to the `backend` directory and execute the following command:
+- `mvn test`: Runs the backend unit tests and integration tests.
+
+
+
+
+
