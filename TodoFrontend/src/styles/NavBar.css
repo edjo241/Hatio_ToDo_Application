@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #1b1b80;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right > * {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logout-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    text-decoration: underline;
+    background: none;
+    transform: translateY(-2px) scale(1.05); /* Adjust the translateY and scale values as needed */
+  transition: transform 0.3s ease; 
+    
+  }
+  

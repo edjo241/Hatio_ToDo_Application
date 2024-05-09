@@ -1,0 +1,140 @@
+h1 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .TodoWrapper {
+ 
+    background: #1b1b80;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    
+  }
+  
+  .TodoForm {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-input {
+    outline: none;
+    background: none;
+    border: 1px solid #8758ff;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    color: #fff;
+  }
+  
+  .todo-input::placeholder {
+    color: #ffffff4d;
+  }
+  
+  .todo-btn {
+    background: #8758ff;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+  }
+  
+  .Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8758ff;
+    color: #fff;
+    padding: 0rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .fa-trash {
+    margin-left: 0.75rem;
+  }
+  
+  .incompleted {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .completed {
+    color: #c5aeff;
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+  }
+   
+
+
+
+  .try{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+    padding-left: 3rem;
+    
+  }
+  
+  .todo-filter-container{
+    /* padding-right: 9rem; */
+    margin-bottom: 16rem;
+  }
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.todo-list-container {
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: #8758ff #1b1b80;
+  }
+  
+  
+  .todo-list-container::-webkit-scrollbar-track {
+    background: #1b1b80; 
+  }
+  
+
+  .todo-list-container::-webkit-scrollbar-thumb {
+    background-color: #8758ff; 
+    border-radius: 10px; 
+  }
+  
+  
+  .todo-list-container::-webkit-scrollbar-thumb:hover {
+    background-color: #6045b2; 
+  }
+
+  .todo-list{
+    margin-right: 5px;
+  }
+
+  @media screen and (max-width: 760px) {
+    .try {
+      padding-left: 1rem;
+    }
+    .todo-filter-container {
+        margin-bottom:11rem;
+      }
+  }
+  
+
+  @media screen and (min-width: 768px) {
+    .todo-filter-container {
+      margin-bottom:16rem;
+      padding-right: 9rem;
+    }
+  }
