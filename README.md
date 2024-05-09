@@ -56,7 +56,7 @@ Replace `your_mysql_username` and `your_mysql_password` with your actual MySQL u
 4. #Note
 
 1. Used Github access token to create gist. It may expires which cause error to generates gist file , if it happens please replace with the new github access token. 
-2. Gist file will also save in the directory exporedProjects locally.
+2. Gist file will also save in the directory exporedProjects locally in the backend directory.
 
 5. Build the project using Maven:
 6. Run the Spring Boot application:
