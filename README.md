@@ -48,18 +48,13 @@ Make sure you have the following installed on your system:
 1. Clone the repository:
 2. Navigate to the `backend` directory:
 3. **Set up the MySQL database**:
-
 The application uses a MySQL database. Before running the application, you need to create a MySQL database and configure the connection details in the `application.properties` file located in `src/main/resources`.
-
 Open the `application.properties` file and update the following properties with your MySQL credentials:
 Replace `your_mysql_username` and `your_mysql_password` with your actual MySQL username and password. You can also modify the `todo_schema` database name if needed.
-4. #Note
-
-1. Used Github access token to create gist. It may expires which cause error to generates gist file , if it happens please replace with the new github access token. 
-2. Gist file will also save in the directory exporedProjects locally in the backend directory.
-
-5. Build the project using Maven:
-6. Run the Spring Boot application:
+4. Used Github access token to create gist. It may expires which cause error to generates gist file , if it happens please replace with the new github access token.
+5. Gist file will also save in the directory exporedProjects locally in the backend directory.
+6. Build the project using Maven:
+7. Run the Spring Boot application:
 The backend server will start running on `http://localhost:8080`.
 
 ### Frontend Setup
@@ -79,11 +74,6 @@ The frontend application will be accessible at `http://localhost:3000`.
 
 - `npm install`: Installs the required dependencies for the React frontend.
 - `npm start`: Starts the React development server and launches the application in the browser.
-
-#Note
-
-1. Used Github access token to create gist. It may expires which cause error to generates gist file. 
-2. Gist file will also save in the directory exporedProjects locally.
 
 ## Testing
 
