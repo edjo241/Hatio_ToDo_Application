@@ -1,5 +1,6 @@
 package com.hatio.todoapplication.controller;
 
+import com.hatio.todoapplication.CustomAnnotations.HttpLogger;
 import com.hatio.todoapplication.dto.ProjectDto;
 import com.hatio.todoapplication.model.Project;
 import com.hatio.todoapplication.service.ProjectService;
@@ -24,13 +25,16 @@ public class ProjectController {
         return ResponseEntity.ok(projectService.getProjectById(id));
     }
 
+
     //Get All Projects
+
     @GetMapping("/project/all")
     public ResponseEntity<?> getAllProjects(){
         return projectService.getAllProjectsService();
     }
 
     //Get All Projects By UserId
+    @HttpLogger
     @GetMapping("project/all/{userId}")
     public ResponseEntity<?> getProjectByUserId(@PathVariable Integer userId){
         return projectService.getProjectByUserIdService(userId);

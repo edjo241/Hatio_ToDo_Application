@@ -27,7 +27,20 @@ function ProjectsPage() {
               }
         })
         if(response.data){
-            setData(response.data);
+
+          const filteredData= response.data.filter((data)=>(
+
+            !data.deleted
+          )
+          );
+
+            setData(filteredData);
+
+            console.log("set data",data);
+
+            console.log("filterred data",filteredData);
+
+
            
             console.log("title", response.data[0].todoList);
             

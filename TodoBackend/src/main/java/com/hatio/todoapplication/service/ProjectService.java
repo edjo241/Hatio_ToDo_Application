@@ -74,7 +74,11 @@ public class ProjectService {
 
     public ResponseEntity<String> deleteProjectByIdService(Integer id) {
         if(projectRepository.existsById(id)){
-            projectRepository.deleteById(id);
+
+            Project project= projectRepository.findById(id).orElseThrow(()->new ProjectNotFoundException(("Project not found")));
+            project.setDeleted(true);
+            projectRepository.save((project));
+//            projectRepository.deleteById(id);
             return ResponseEntity.ok("Project With ID: " + id + " has been deleted");
         }
         else{

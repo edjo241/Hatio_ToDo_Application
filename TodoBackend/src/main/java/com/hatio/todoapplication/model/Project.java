@@ -23,6 +23,7 @@ public class Project {
     private String title;
 
     private Date createdDate;
+    private boolean isDeleted;
 
     @OneToMany(mappedBy = "project", fetch = FetchType.EAGER ,cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Todo> todoList;

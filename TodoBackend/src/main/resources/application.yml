@@ -6,7 +6,7 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
     jpa:
       hibernate:
-        ddl-auto: none
+        ddl-auto: create-drop
       show-sql: true
       properties:
         hibernate:
@@ -16,4 +16,4 @@ spring:
 
 # application.yaml
 github:
-  token: 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
+  token: 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
